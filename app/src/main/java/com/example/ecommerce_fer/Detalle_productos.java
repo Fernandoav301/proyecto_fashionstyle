@@ -78,14 +78,14 @@ public class Detalle_productos extends AppCompatActivity {
         btmas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String cantidad = preferences.getString("idproducto","0");
+                String cantidad = preferences.getString("1","0");
                 int cant = Integer.parseInt(cantidad);
 
                     cant = cant + 1;
 
                 SharedPreferences.Editor editor = preferences.edit();
 
-                editor.putString("idproducto",cant+"");
+                editor.putString("1",cant+"");
                 editor.commit();
                 total.setText("Cantidad: "+cant+"");
             }
@@ -94,12 +94,12 @@ public class Detalle_productos extends AppCompatActivity {
         btmenos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String cantidad = preferences.getString("idproducto","0");
+                String cantidad = preferences.getString("1","0");
                 int cant = Integer.parseInt(cantidad);
                 if (cant > 0)
                 cant = cant - 1;
                 SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("idproducto",cant+"");
+                editor.putString("1",cant+"");
                 editor.commit();
                 total.setText("Cantidad: "+cant+"");
 
