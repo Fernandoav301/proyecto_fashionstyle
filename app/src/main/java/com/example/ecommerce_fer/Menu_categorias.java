@@ -22,35 +22,27 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class Menu_productos extends AppCompatActivity {
+public class Menu_categorias extends AppCompatActivity {
 
-    private ListView listaproductos;
-    private ArrayList<productos> list_productos;
-    private ProductoAdapter adapter;
+
+    private ListView listacategorias;
+    private ArrayList<categorias> list_categorias;
+    private CategoriaAdapter adapter;
 
 
     @Override
-    protected void onCreate(Bundle savedIntanceState) {
-        super.onCreate(savedIntanceState);
-        setContentView(R.layout.activity_menu_productos);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_menu_categorias);
+        listacategorias = (ListView) findViewById(R.id.ListMenu);
+        list_categorias = new ArrayList<>();
 
+        GetCategos();
 
-
-        listaproductos = (ListView) findViewById(R.id.ListProductos);
-        list_productos = new ArrayList<>();
-        Bundle extras=getIntent().getExtras();
-        if (extras != null){
-            if (extras.get("idCategoria")!=null){
-                Toast.makeText(getApplicationContext(), "Se mostraran los productos de la categoria: "+extras.get("idCategoria").toString(),Toast.LENGTH_LONG).show();
-                GetProductos(extras.get("idCategoria").toString());            
-            }
-            
-        }
     }
-
-    private void GetProductos(String idCategoria) {
+    private void GetCategos() {
         RequestQueue queque = Volley.newRequestQueue(this);
-        String url= "https://fashionstylefdo.000webhostapp.com/ws.php?productos="+idCategoria;
+        String url= "https://fashionstylefdo.000webhostapp.com/ws.php?categorias";
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
@@ -61,14 +53,14 @@ public class Menu_productos extends AppCompatActivity {
                         for (int i=0;i<jsonArray.length(); i++){
                             JSONObject jsonObject = new JSONObject();
                             jsonObject = jsonArray.getJSONObject(i);
-                            list_productos.add(new productos(jsonObject.optString("idproducto"),jsonObject.optString("nombre"),jsonObject.optString("descripcion"),jsonObject.optString("foto"),"Precio: $"+jsonObject.optString("precio")+".00"));
+                            list_categorias.add(new categorias(jsonObject.optString("id"),jsonObject.optString("name"),jsonObject.optString("imagen")));
                         }
-                        LlenarProductos();
+                       LlenarLista();
                     } catch (JSONException e) {
                         Toast.makeText(getApplicationContext(),"Error"+ e.getMessage(),Toast.LENGTH_LONG).show();
                     }
                 }else
-                    Toast.makeText(getApplicationContext(),"Error al cargar los productos",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Error al cargar categorias",Toast.LENGTH_LONG).show();
             }
         },new Response.ErrorListener(){
             @Override
@@ -80,18 +72,17 @@ public class Menu_productos extends AppCompatActivity {
         queque.add(jsonObjectRequest);
     }
 
-    private void LlenarProductos() {
-        adapter = new ProductoAdapter(this,R.layout.items_productos,list_productos);
-        listaproductos.setAdapter(adapter);
-        listaproductos.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+    private void LlenarLista() {
+        adapter = new CategoriaAdapter(this,R.layout.items_menu_categorias,list_categorias);
+        listacategorias.setAdapter(adapter);
+        listacategorias.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
-                Intent intent = new Intent(Menu_productos.this,Detalle_productos.class);
-                intent.putExtra("idproducto",list_productos.get(i).getIdProducto());
+                Intent intent = new Intent(Menu_categorias.this,Menu_productos.class);
+                intent.putExtra("idCategoria",list_categorias.get(i).getId());
                 startActivity(intent);
-                Toast.makeText(getApplicationContext(), "Seleccionaste: "+list_productos.get(i).getNombre(),Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Seleccionaste: "+list_categorias.get(i).getName(),Toast.LENGTH_LONG).show();
             }
         });
     }
-
 }

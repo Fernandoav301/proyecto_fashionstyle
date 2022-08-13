@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         loguear = (Button)findViewById(R.id.bt_login);
         registrar = (Button)findViewById(R.id.btn_registro);
         usuario = (EditText)findViewById(R.id.user);
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 logueate();
-                Intent i= new Intent(getApplicationContext(),Menu_principal.class);
+                Intent i= new Intent(getApplicationContext(), Menu_categorias.class);
                 startActivity(i);
 
 

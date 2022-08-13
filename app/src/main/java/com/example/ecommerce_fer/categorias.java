@@ -1,31 +1,38 @@
 package com.example.ecommerce_fer;
 
 public class categorias {
-    private String categoria;
-    private String ftcategoria;
+    String id;
+    String name;
+    String imagen;
 
-    public String getCategoria() {
-        return categoria;
-    }
-
-    public void setCategoria(String categoria) {
-        this.categoria = categoria;
-    }
-
-    public String getFtcategoria() {
-        return ftcategoria;
-    }
-
-    public void setFtcategoria(String ftcategoria) {
-        this.ftcategoria = ftcategoria;
-    }
-
-    public categorias(String categoria, String ftcategoria){
-
-        this.categoria = categoria;
-        this.ftcategoria = ftcategoria;
+    public categorias(String id, String name, String imagen) {
+        this.id = id;
+        this.name = name;
+        this.imagen = imagen;
     }
 
 
+    public String getId() {
+        return id;
+    }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
+    }
 }

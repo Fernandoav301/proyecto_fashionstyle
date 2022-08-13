@@ -5,25 +5,36 @@
       <map>
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable-v24/button.xml" value="0.116" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable-v24/estilobotones.xml" value="0.116" />
+        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable-v24/ic_add_item.xml" value="0.177" />
+        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.177" />
+        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable-v24/ic_remove_item.xml" value="0.177" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable-v24/ic_volver_atras.xml" value="0.181" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable/botonselector.xml" value="0.116" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable/botonseletor.xml" value="0.1" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable/estilobotonclick.xml" value="0.116" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable/estilobotones.xml" value="0.1" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable/estiloimagen.xml" value="0.12" />
+        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable/ic_add_shop.xml" value="0.182" />
+        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable/ic_bolsa_compras.xml" value="0.182" />
+        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable/ic_launcher_background.xml" value="0.177" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/drawable/layerlist.xml" value="0.116" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/activity_caballeros.xml" value="0.1859375" />
+        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/activity_carrito.xml" value="0.20416666666666666" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/activity_categorias.xml" value="0.25" />
-        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/activity_detalle_productos.xml" value="0.2" />
+        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/activity_detalle_productos.xml" value="0.33" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/activity_menu.xml" value="0.2" />
+        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/activity_menu_categorias.xml" value="0.203125" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/activity_menu_principal.xml" value="0.203125" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/activity_menu_productos.xml" value="0.2" />
-        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/activity_registro.xml" value="0.14" />
+        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/activity_registro.xml" value="0.21" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/item.xml" value="0.25" />
+        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/item_carrito.xml" value="0.67" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/items_menu.xml" value="0.2" />
+        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/items_menu_categorias.xml" value="0.1702127659574468" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/items_productos.xml" value="0.1408514492753623" />
         <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/layout/list_view.xml" value="0.19895833333333332" />
+        <entry key="..\:/Usuarios/Avila/Ecommerce_fer/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.104" />
       </map>
     </option>
   </component>

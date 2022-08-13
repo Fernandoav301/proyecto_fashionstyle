@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">Ecommerce_fer</string>
-    <string name="Nombre">Nombre del producto:</string>
-    <string name="Descripcion">Descripción:</string>
-    <string name="Precio">Precio: $</string>
-    <string name="cat1">Cargando...</string>
-    <string name="cat2">Damas</string>
-    <string name="cat3">Niños</string>
+    <string name="add_shop">AGREGAR</string>
+    <string name="carrito">IR AL CARRITO</string>
+    <string name="Nombre">Nombre del Producto: </string>
+    <string name="Cantidad">Cantidad Selecionada: </string>
+    <string name="Precio">Total a Pagar: $</string>
+
 </resources>
